@@ -1,0 +1,12 @@
+{
+    "type": "neoforge:remove_features",
+    "biomes": "#minecraft:is_overworld",
+    "features": [
+      "autumnity:trees_maple",
+      "autumnity:spotted_maples_red",
+      "autumnity:spotted_maples_orange",
+      "autumnity:spotted_maples_yellow",
+      "upgrade_aquatic:beachgrass_dunes"
+      ],
+    "step": "vegetal_decoration"
+  }

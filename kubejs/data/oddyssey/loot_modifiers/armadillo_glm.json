@@ -1,0 +1,14 @@
+{
+  "type": "oddyssey:add_drop",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:armadillo"
+      }
+    }
+  ],
+  "item": "minecraft:armadillo_scute",
+  "amount": 1
+}
