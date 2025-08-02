@@ -209,5 +209,15 @@ global.nukelist = [
     'farmersdelight:cake_slice',
     'farmersdelight:sweet_berry_cheesecake_slice',
     'mynethersdelight:magma_cake_slice',
-    'takesapillage:ravager_horn'
+    'takesapillage:ravager_horn',
+    'sleepcycle:sleeping_bag',
+    "mynethersdelight:",
+    "mynethersdelight:",
+    "mynethersdelight:",
+    "mynethersdelight:",
+    "mynethersdelight:",
+    "mynethersdelight:",
+    "minersdelight:"
+
+
  ]
