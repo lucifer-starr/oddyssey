@@ -1,0 +1,46 @@
+#Disable xp from dropping, commands and the bar. Does not remove XP already obtained.
+disableXP = false
+#Speed of the vanilla minecart. Going over 2.0 will probably derail you around corners.
+# Default: 1.2
+# Range: 0.5 ~ 20.0
+minecartMaxSpeed = 1.2
+#Whether to allow the nether portal from forming.
+allowNetherPortalForming = false
+#Whether to generate large copper and iron ore nodes. Might break your world if you toggle this.
+generateLargeOreNodes = true
+#Whether to allow command block use. FOR EVERYONE INCL. CREATIVE.
+allowCommandBlockUse = true
+#Whether or not to override the permission level for command blocks. This and allowCommandBlockUse need to be true to allow survival commandblocks.
+overrideCommandBlockPerm = false
+#Should the tag "#c:death_preventables" be active and allow totems from the inventory.
+enableInventoryTotem = false
+#Should the tag "#c:will_burn_players" be active.
+hotItemsDamagePlayers = true
+#Should the tag "#c:heat_resistant_items" be active.
+itemsFireImmunity = true
+#Should the tag "#c:heat_resistant_items" be active.
+whatever = false
+#Whether to disable the first Narrator screen on launch. Unless you're developing, probably keep this off.
+disableAccessibilityOnboardingScreen = false
+#Height of the heart and armor bar offset.
+# Default: 0
+# Range: -50 ~ 50
+leftBarHeightOffset = 0
+#Height of the food bar offset.
+# Default: 0
+# Range: -50 ~ 50
+rightBarHeightOffset = 0
+#Offsetting the AppleSkin food and heart overlay -in pixels- if it's installed.
+# Default: 0
+# Range: 0 ~ 200
+offsetAppleskin = 0
+#If hostiles should stop spawning. Does not include the Wither and Ender Dragon bosses.
+preventHostiles = false
+#Prevents the ender dragon from spawning. ANY DIFFICULTY
+preventDragonBoss = true
+#Prevents the Wither boss from forming. ANY DIFFICULTY
+preventWitherBossForm = false
+#Prevents the Wither boss from spawning. ANY DIFFICULTY
+preventWitherBossSpawn = false
+#Prevents Slimes from spawning. ANY DIFFICULTY
+preventSlimeSpawn = false
