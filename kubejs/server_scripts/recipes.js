@@ -55,5 +55,18 @@ ServerEvents.recipes(e => {
     }
     ),
 
+    e.remove({ id: 'heartstone:heartstone' }),
+    e.shaped(
+        Item.of('heartstone:heartstone', 2), 
+        [
+            'HA ',
+            'AH ',
+        ],
+    {
+        A: 'minecraft:amethyst_shard',
+        H: 'heart_crystals:heart_crystal_shard',  
+    }
+    ),
+
   console.log('Hello! The recipe event has fired!')
 })
