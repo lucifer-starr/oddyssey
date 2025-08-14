@@ -29,6 +29,16 @@ ServerEvents.recipes(e => {
                     'minecraft:copper_ingot',           
                     'minecraft:iron_ingot'         
     ),
+    e.replaceInput(
+         {output: 'minersdelight:copper_pot' }, 
+                    'minecraft:copper_ingot',           
+                    'minecraft:brick'         
+    ),
+    e.replaceInput(
+         {output: 'minersdelight:copper_cup' }, 
+                    'minecraft:copper_ingot',           
+                    'minecraft:brick'         
+    ),
 
     //complex recipe changes
     //e.remove({ id: 'minecraft:note_block' }),
