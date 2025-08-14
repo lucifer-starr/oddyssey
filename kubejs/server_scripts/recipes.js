@@ -1,4 +1,5 @@
 ServerEvents.recipes(e => {
+    // new recipes
     e.shaped(
         Item.of('minecraft:elytra', 1), // arg 1: output
         [
@@ -6,54 +7,44 @@ ServerEvents.recipes(e => {
             'PBP', // arg 2: the shape (array of strings)
             'P P'
         ],
-    {
+        {
         P: 'minecraft:phantom_membrane',
         B: 'minecraft:breeze_rod',  //arg 3: the mapping object
         C: 'minecraft:honeycomb'
-    }
+        }
     ),
-    e.remove({ id: 'minecraft:jukebox' }),
-    e.shaped(
-        Item.of('minecraft:jukebox', 1), 
-        [
-            'PPP',
-            'PAP', 
-            'PPP'
-        ],
-    {
-        P: '#minecraft:planks',
-        A: 'minecraft:amethyst_shard',
-    }
+    //simple recipe changes
+    e.replaceInput(
+         {output: 'minecraft:jukebox' }, 
+                    'minecraft:diamond',           
+                    'minecraft:amethyst_shard'         
     ),
-    e.remove({ id: 'minecraft:noteblock' }),
-    e.shaped(
-        Item.of('minecraft:noteblock', 1), 
-        [
-            'PRP',
-            'ARA', 
-            'PRP'
-        ],
-    {
-        P: '#minecraft:planks',
-        A: 'minecraft:amethyst_shard',
-        R: 'minecraft:redstone',
+    e.replaceInput(
+         {output: 'etched:etching_table' }, 
+                    'minecraft:diamond',           
+                    'minecraft:amethyst_shard'         
+    ),
+    e.replaceInput(
+         {output: 'etched:boombox' }, 
+                    'minecraft:copper_ingot',           
+                    'minecraft:iron_ingot'         
+    ),
 
-    }
-    ),
-    e.remove({ id: 'etched:etching_table' }),
-    e.shaped(
-        Item.of('etched:etching_table', 1), 
-        [
-            ' AI',
-            'PPP', 
-            '   '
-        ],
-    {
-        A: 'minecraft:amethyst_shard',
-        I: 'minecraft:iron_ingot',  
-        P: '#minecraft:planks'
-    }
-    ),
+    //complex recipe changes
+    //e.remove({ id: 'minecraft:note_block' }),
+    //e.shaped(
+    //    'minecraft:note_block', 
+    //    [
+    //        'PAP',
+    //        'ARA', 
+    //        'PAP'
+    //    ],
+    //{
+    //    P: '#minecraft:planks',
+    //    A: 'minecraft:amethyst_shard',
+    //    R: 'minecraft:redstone'
+
+    //}),
 
     e.remove({ id: 'heartstone:heartstone' }),
     e.shaped(
@@ -67,6 +58,8 @@ ServerEvents.recipes(e => {
         H: 'heart_crystals:heart_crystal_shard',  
     }
     ),
+    
+    
 
   console.log('Hello! The recipe event has fired!')
 })
