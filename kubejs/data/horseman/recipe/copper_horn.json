@@ -1,0 +1,20 @@
+{
+  "type": "horseman:component_transferring",
+  "source": {
+    "item": "minecraft:goat_horn"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "result": {
+    "id": "horseman:copper_horn"
+  }
+}
