@@ -1,7 +1,6 @@
 global.nukelist = [
     'arts_and_crafts:pottery_sherd',
     'arts_and_crafts:finale_pottery_sherd',
-
     'autumnity:sap_bottle',
     'autumnity:syrup_bottle',
     'autumnity:pancake',
