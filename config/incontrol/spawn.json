@@ -1,0 +1,10 @@
+[
+    {
+    "mob": ["minecraft:villager", "minecraft:zombie_villager", "minecraft:wandering_trader", "minecraft:trader_llama", "minecraft:pillager", "minecraft:vindicator"],
+    "result": "deny"
+    },
+    {
+    "mob": ["goblintraders:vein_goblin_trader"],
+    "result": "deny"
+    }
+]
