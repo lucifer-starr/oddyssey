@@ -1,0 +1,21 @@
+{
+  "values": [
+    "minecraft:desert_pyramid",
+    "minecraft:shipwreck_beached",
+    "minecraft:swamp_hut",
+    "minecraft:monument",
+    "minecraft:buried_treasure",
+    "minecraft:ancient_city",
+    "minecraft:trail_ruins",
+    "minecraft:trial_chambers",
+    "minecraft:mineshaft",
+    "minecraft:mineshaft_mesa",
+    "atmospheric:kousa_sanctum",
+    "atmospheric:arid_garden",
+    "newworld:buried_bunker",
+    "nomansland:creeper_monument",
+    "nomansland:drowned_monument",
+    "nomansland:forest_temple",
+    "nomansland:sniffer_monument"
+  ]
+}
