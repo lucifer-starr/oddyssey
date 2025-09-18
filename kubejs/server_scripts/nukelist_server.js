@@ -1,27 +1,45 @@
 ServerEvents.tags('item', event => {
-    event.removeAllTagsFrom(global.nukelist) // removes items in the nukelist from tags assigned by mods or by vanilla
-    event.add('oddyssey:nukelist', global.nukelist) // Add your own tag here for your modpack
- })
-
- ServerEvents.recipes(e => {
-    global.nukelist.forEach(item => {
-        e.remove({ output: item })
-        e.remove({ input: item })
-    })
+   if (global.nukelist.length > 0) {
+      event.removeAllTagsFrom(global.nukelist)  // Removes all tags from nuked items so they don't show up in tag viewers (EMI) or break recipes when removed
+      event.add('oddyssey:nukelist', global.nukelist)  // Type your own pack name where it says modpack!
+      event.add('c:hidden_from_recipe_viewers', global.nukelist) // Hides from EMI/JEI
+   }
 })
 
-ServerEvents.tags('item', e => {
-    global.nukelist.forEach(item => {
-        e.add('c:hidden_from_recipe_viewers', item)
-    })
+ServerEvents.tags('block', event => {
+   if (global.nukelist.length > 0) {
+      event.removeAllTagsFrom(global.nukelist)
+      event.add('oddyssey:nukelist', global.nukelist) 
+   }
 })
 
-    let myFilter = ItemFilter.custom(item=> {
-        return item.hasTag("#oddyssey:nukelist")
-      })
-      
-      LootJS.modifiers(event => {
-        event
-          .addTableModifier("chest", "block", "entity", "fishing", "archaeology", "gift", "vault", "shearing", "piglin_barter")
-          .removeLoot(myFilter);
-     }) 
+ServerEvents.tags('fluid', event => {
+   if (global.nukelist.length > 0) {
+      event.removeAllTagsFrom(global.nukelist)
+      event.add('oddyssey:nukelist', global.nukelist)
+   }
+})
+
+ServerEvents.tags('entity_type', event => {
+   if (global.nukelist.length > 0) {
+      event.removeAllTagsFrom(global.nukelist)
+      event.add('oddyssey:nukelist', global.nukelist)
+   }
+})
+
+
+ServerEvents.recipes(event => {
+   if (global.nukelist.length > 0) {
+      event.remove({ input: global.nukelist }) // Removes any recipe this item is an INPUT in
+      event.remove({ output: global.nukelist }) // Removes any recipe this item is an OUTPUT in
+   }
+})
+
+PlayerEvents.chat(event => { // You can say "nukelist reload" in chat to reload all scripts, I'll probably change this at some point
+   if (event.message == 'nukelist reload') {
+      event.server.runCommand(`tell @a Now reloading Nukelist scripts`)
+      event.server.runCommand(`kubejs reload startup-scripts`)
+      event.server.runCommand(`reload`)
+      event.server.runCommand(`kubejs reload lang`)
+   }
+})

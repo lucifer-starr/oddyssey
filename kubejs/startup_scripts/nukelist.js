@@ -1,26 +1,9 @@
-global.nukelist = [
+ global.nukelist = [ // List of things to be disabled and hidden from the game. You can nuke Items, Blocks, Fluids, and Entities, although the last one won't have much of an effect (it can do stuff like making cows unmilkable though, but won't disable spawning or spawn egg item)
     'arts_and_crafts:pottery_sherd',
     'arts_and_crafts:finale_pottery_sherd',
     'autumnity:sap_bottle',
     'autumnity:syrup_bottle',
     'autumnity:pancake',
-    'autumnity:maple_log',
-    'autumnity:maple_wood',
-    'autumnity:stripped_maple_log',
-    'autumnity:stripped_maple_wood',
-    'autumnity:sappy_maple_log',
-    'autumnity:sappy_maple_wood',
-    'autumnity:maple_planks',
-    'autumnity:maple_stairs',
-    'autumnity:maple_slab',
-    'autumnity:maple_hanging_sign',
-    'autumnity:maple_sign',
-    'autumnity:maple_fence',
-    'autumnity:maple_fence_gate',
-    'autumnity:maple_door',
-    'autumnity:maple_trapdoor',
-    'autumnity:maple_pressure_plate',
-    'autumnity:maple_button',
     'autumnity:maple_sapling',
     'autumnity:yellow_maple_sapling',
     'autumnity:orange_maple_sapling',
@@ -74,132 +57,22 @@ global.nukelist = [
     'bountifulfares:plum_block',
     'bountifulfares:golden_apple_block',
     'bountifulfares:hoary_apple_block',
-    'bountifulfares:spruce_pickets',
-    'bountifulfares:birch_pickets',
-    'bountifulfares:jungle_pickets',
-    'bountifulfares:acacia_pickets',
-    'bountifulfares:dark_oak_pickets',
-    'bountifulfares:mangrove_pickets',
-    'bountifulfares:cherry_pickets',
-    'bountifulfares:bamboo_pickets',
-    'bountifulfares:walnut_pickets',
-    'bountifulfares:hoary_pickets',
-    'bountifulfares:crimson_pickets',
-    'bountifulfares:warped_pickets',
-    'bountifulfares:bamboo_pickets',
-    'pearfection:callery_pickets',
-    'mint:wintergreen_pickets',
-    'excessive_building:ancient_pickets',
-    'arts_and_crafts:cork_pickets',
-    'dungeonsdelight:wormwood_pickets',
-    'spawn:rotten_pickets',
-    'natures_spirit:aspen_pickets',
-    'natures_spirit:cedar_pickets',
-    'natures_spirit:coconut_pickets',
-    'natures_spirit:cypress_pickets',
-    'natures_spirit:fir_pickets',
-    'natures_spirit:ghaf_pickets',
-    'natures_spirit:joshua_pickets',
-    'natures_spirit:larch_pickets',
-    'natures_spirit:mahogany_pickets',
-    'natures_spirit:maple_pickets',
-    'natures_spirit:olive_pickets',
-    'natures_spirit:palo_verde_pickets',
-    'natures_spirit:redwood_pickets',
-    'natures_spirit:saxual_pickets',
-    'natures_spirit:sugi_pickets',
-    'natures_spirit:willow_pickets',
-    'natures_spirit:wisteria_pickets',
-    'bountifulfares:birch_trellis',
-    'bountifulfares:jungle_trellis',
-    'bountifulfares:acacia_trellis',
-    'bountifulfares:dark_oak_trellis',
-    'bountifulfares:mangrove_trellis',
-    'bountifulfares:cherry_trellis',
-    'bountifulfares:bamboo_trellis',
-    'bountifulfares:walnut_trellis',
-    'bountifulfares:hoary_trellis',
-    'bountifulfares:crimson_trellis',
-    'bountifulfares:warped_trellis',
-    'bountifulfares:bamboo_trellis',
-    'pearfection:callery_trellis',
-    'mint:wintergreen_trellis',
-    'excessive_building:ancient_trellis',
-    'arts_and_crafts:cork_trellis',
-    'dungeonsdelight:wormwood_trellis',
-    'spawn:rotten_trellis',
-    'natures_spirit:aspen_trellis',
-    'natures_spirit:cedar_trellis',
-    'natures_spirit:coconut_trellis',
-    'natures_spirit:cypress_trellis',
-    'natures_spirit:fir_trellis',
-    'natures_spirit:ghaf_trellis',
-    'natures_spirit:joshua_trellis',
-    'natures_spirit:larch_trellis',
-    'natures_spirit:mahogany_trellis',
-    'natures_spirit:maple_trellis',
-    'natures_spirit:olive_trellis',
-    'natures_spirit:palo_verde_trellis',
-    'natures_spirit:redwood_trellis',
-    'natures_spirit:saxual_trellis',
-    'natures_spirit:sugi_trellis',
-    'natures_spirit:willow_trellis',
-    'natures_spirit:wisteria_trellis',
-    'pearfection:callery_boat',
-    'pearfection:callery_chest_boat',
     'no_mans_delight:walnut_cookie',
     'nomansland:pear_cobbler_slice',
-    'nomansland:walnuts',
-    'nomansland:walnut_log',
-    'nomansland:walnut_wood',
-    'nomansland:stripped_walnut_log',
-    'nomansland:stripped_walnut_wood',
-    'nomansland:walnut_planks',
-    'nomansland:walnut_stairs',
-    'nomansland:walnut_slab',
-    'nomansland:walnut_bookshelf',
-    'nomansland:trimmed_walnut_planks',
-    'nomansland:walnut_cabinet',
-    'nomansland:walnut_fence',
-    'nomansland:walnut_fence_gate',
-    'nomansland:walnut_door',
-    'nomansland:walnut_trapdoor',
-    'nomansland:walnut_pressure_plate',
-    'nomansland:walnut_button',
-    'nomansland:walnut_leaves',
-    'nomansland:walnut_sapling',
-    'nomansland:walnut_sign',
-    'nomansland:walnut_hanging_sign',
-    'supplementaries:nomansland/way_sign_walnut',
-    'nomansland:trimmed_oak_planks',
     'nomansland:spruce_bookshelf',
-    'nomansland:trimmed_spruce_planks',
     'nomansland:birch_bookshelf',
-    'nomansland:trimmed_birch_planks',
     'nomansland:jungle_bookshelf',
-    'nomansland:trimmed_jungle_planks',
     'nomansland:dark_oak_bookshelf',
-    'nomansland:trimmed_dark_oak_planks',
     'nomansland:acacia_bookshelf',
-    'nomansland:trimmed_acacia_planks',
     'nomansland:mangrove_bookshelf',
-    'nomansland:trimmed_mangrove_planks',
     'nomansland:cherry_bookshelf',
-    'nomansland:trimmed_cherry_planks',
     'nomansland:warped_bookshelf',
-    'nomansland:trimmed_warped_planks',
     'nomansland:crimson_bookshelf',
-    'nomansland:trimmed_crimson_planks',
     'nomansland:bamboo_bookshelf',
-    'nomansland:trimmed_bamboo_planks',
     'nomansland:pine_bookshelf',
-    'nomansland:trimmed_pine_planks',
     'nomansland:maple_bookshelf',
-    'nomansland:trimmed_maple_planks',
     'nomansland:willow_bookshelf',
-    'nomansland:trimmed_willow_planks',
     'newworld:fir_bookshelf',
-    'newworld:trimmed_fir_planks',
     'rubinated_nether:ruby_brazier',
     'farmersdelight:rope',
     'farmersdelight:apple_pie',
@@ -208,15 +81,44 @@ global.nukelist = [
     'farmersdelight:cake_slice',
     'farmersdelight:sweet_berry_cheesecake_slice',
     'mynethersdelight:magma_cake_slice',
-    'takesapillage:ravager_horn',
-    'sleepcycle:sleeping_bag',
-    //"mynethersdelight:",
-    //"mynethersdelight:",
-   // "mynethersdelight:",
-    //"mynethersdelight:",
-    //"mynethersdelight:",
-    //"mynethersdelight:",
-    //"minersdelight:"
+
+// I like to separate the different things by registry type, so below could be the fluid section
+
+    'examplemod:examplefluidid', // Last option can end with a comma
+
+// I also like to sort them in alphabetical order, there's a VSCode addon for that
+
+]
 
 
- ]
+// Below are some utility functions to quickly add things in multiple wood types/colours, you could expand this to toolsets or ingot types
+const moddedWoodTypes = [
+  'autumnity:maple', "architectspalette:twisted"
+]
+// You can expand the above to include modded wood types too 
+
+
+/*for (const wood of vanillaWoodTypes) {
+    global.nukelist.push(`examplefurnituremod:${wood}_table`)
+}*/
+
+/*for (const colour of dyeColours) {
+    global.nukelist.push(`examplefurnituremod:${colour}_coloured_thing`)
+    global.nukelist.push(`examplefurnituremod:${colour}_coloured_second_thing`) 
+}*/
+
+// Below would nuke all coloured_third_thing in every colour except for blue
+/*for (const colour of dyeColours) {
+    if (colour !== 'blue') {
+      global.nukelist.push(`examplefurnituremod:${colour}_coloured_third_thing`)
+    }
+}*/
+
+// To use these item nuking scripts, type the IDs of items you want to disable in the space above. 
+// Then, type 'nukelist reload', which will run these commands: (this is a custom script as well)
+// /kubejs reload startup-scripts
+// /reload
+// /kubejs reload lang
+
+// Can nuke Items, Blocks, Fluids, Entities
+ 
