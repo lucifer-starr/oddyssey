@@ -58,6 +58,8 @@
     'bountifulfares:golden_apple_block',
     'bountifulfares:hoary_apple_block',
     'bountifulfares:sweet_berry_pips',
+    'bountifulfares:walnut',
+    'bountifulfares:walnut_sapling',
     'nomansland:pear_cobbler_slice',
     'nomansland:spruce_bookshelf',
     'nomansland:birch_bookshelf',
