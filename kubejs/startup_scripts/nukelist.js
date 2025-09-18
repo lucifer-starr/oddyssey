@@ -57,7 +57,6 @@
     'bountifulfares:plum_block',
     'bountifulfares:golden_apple_block',
     'bountifulfares:hoary_apple_block',
-    'no_mans_delight:walnut_cookie',
     'nomansland:pear_cobbler_slice',
     'nomansland:spruce_bookshelf',
     'nomansland:birch_bookshelf',
@@ -69,11 +68,10 @@
     'nomansland:warped_bookshelf',
     'nomansland:crimson_bookshelf',
     'nomansland:bamboo_bookshelf',
-    'nomansland:pine_bookshelf',
-    'nomansland:maple_bookshelf',
-    'nomansland:willow_bookshelf',
-    'newworld:fir_bookshelf',
-    'rubinated_nether:ruby_brazier',
+    'nomansland:walnut_log',
+    'nomansland:walnut_wood',
+    'nomansland:stripped_walnut_log',
+    'nomansland:stripped_walnut_wood',
     'farmersdelight:rope',
     'farmersdelight:apple_pie',
     'farmersdelight:apple_pie_slice',
@@ -81,6 +79,7 @@
     'farmersdelight:cake_slice',
     'farmersdelight:sweet_berry_cheesecake_slice',
     'mynethersdelight:magma_cake_slice',
+    
 
 // I like to separate the different things by registry type, so below could be the fluid section
 
